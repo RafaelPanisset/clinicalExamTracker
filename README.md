@@ -28,8 +28,8 @@ docker run --name postgres -e POSTGRES_PASSWORD=123 -p 5433:5432 -d postgres
 ```
 Neste comando:
 - `--name postgres-container` define o nome do container.
-- `-e POSTGRES_PASSWORD=sua_senha` define a senha do usuário `postgres`.
-- `-p 5433:5432` mapeia a porta do PostgreSQL no container para a porta 5432 na sua máquina local.
+- `-e POSTGRES_PASSWORD=123` define a senha do usuário `postgres`.
+- `-p 5433:5432` mapeia a porta do PostgreSQL no container para a porta 5433 na sua máquina local.
 - `-d postgres` usa a imagem oficial do PostgreSQL e roda o container em segundo plano.
 
 ### 3. Configuração do Projeto no NetBeans
