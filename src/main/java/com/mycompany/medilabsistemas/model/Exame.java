@@ -15,7 +15,7 @@ public class Exame {
     private int exameID;
     private String numAcesso;
     private Paciente paciente;
-    private Date data;
+    private String data;
     private String modalidade;
     private String tipoExame;
     private int estado;
@@ -30,7 +30,7 @@ public class Exame {
     // Construtores
     public Exame() {}
 
-    public Exame(int exameID, String numAcesso, Paciente paciente, Date data, String modalidade, 
+    public Exame(int exameID, String numAcesso, Paciente paciente, String data, String modalidade, 
                  String tipoExame, int estado, String medSol, char laudo, char especial, 
                  char urgente, char restaurado, String visita, String numero) {
         this.exameID = exameID;
@@ -74,12 +74,12 @@ public class Exame {
         this.paciente = paciente;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
     public void setData(Date data) {
-        this.data = data;
+            this.data = data.toString();
     }
 
     public String getModalidade() {
